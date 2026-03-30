@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soban's Board | Dashboard & Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="animated-bg"></div>
+    
+    <div class="landing-container glass">
+        <div class="logo-area">
+            <div class="logo-icon">
+                <i class="fas fa-head-side-vr"></i>
+            </div>
+            <span>Soban's <span>Board</span></span>
+        </div>
+        
+        <div class="app-grid">
+            <a href="chatboarddash.html" class="app-card">
+                <i class="fas fa-chart-dashboard"></i>
+                <h3>Dashboard</h3>
+                <p>Overview, analytics, recent creations & live chat</p>
+            </a>
+            <a href="chatmessageapp.html" class="app-card">
+                <i class="fas fa-comment-dots"></i>
+                <h3>Wolf Chat</h3>
+                <p>Soban's spirit messenger</p>
+            </a>
+        </div>
+        
+        <div class="deploy-note">
+            🚀 Ready for Vercel deployment!
+        </div>
+    </div>
+
+    <style>
+        .landing-container {
+            max-width: 600px;
+            margin: 4rem auto;
+            padding: 3rem;
+            text-align: center;
+            border-radius: 32px;
+        }
+        
+        .logo-area {
+            margin-bottom: 2rem;
+        }
+        
+        .app-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .app-card {
+            padding: 2rem;
+            border-radius: 24px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s;
+            background: rgba(255,255,255,0.4);
+        }
+        
+        .app-card:hover {
+            transform: translateY(-8px);
+            background: rgba(255,255,255,0.8);
+        }
+        
+        .app-card i {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .app-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .deploy-note {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: rgba(139,92,246,0.2);
+            border-radius: 16px;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .app-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>
